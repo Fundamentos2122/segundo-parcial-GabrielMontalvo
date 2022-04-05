@@ -333,3 +333,9 @@ textarea {
     --btn-altern-font-color: var(--color-dark);
     --btn-altern-bg-color: var(--color-warning-darker);
 }
+
+
+@media (max-width: 600px) {
+    #view{
+    }   
+}

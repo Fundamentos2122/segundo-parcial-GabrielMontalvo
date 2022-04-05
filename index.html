@@ -11,18 +11,22 @@
     <section class="[ side-form ] [ bg-primary color-white ]">
         <h1 class="[ text-center ]">RECETARIO</h1>
         <form class="[ flow ]" id="form-recipe" autocomplete="off">
+            
             <div class="[ form-group ] [ flow ]">
                 <label for="title">Nombre</label>
                 <input type="text" name="title" class="[ form-control ] [ color-gray ]"/>
             </div>
+
             <div class="[ form-group ] [ flow ]">
                 <label for="img_url">URL Imagen</label>
                 <input type="text" name="img_url" class="[ form-control ] [ color-gray ]"/>
             </div>
+
             <div class="[ form-group ] [ flow ]">
                 <label for="description">Descripción</label>
                 <textarea name="description" class="[ form-control ] [ color-gray ]" rows="5"></textarea>
             </div>
+
             <div class="[ form-group ] [ flow ]">
                 <label for="title">Agregar ingrediente</label>
                 <div class="input-group">
@@ -30,6 +34,7 @@
                     <button class="btn" type="button" data-state="white" id="newIng">+</button>
                 </div>
             </div>
+            
             <div>
                 <ul id="ingredient-temp-list" class="[ ing-list ] ">
                     <!-- <li class="[ bg-white color-gray ]">
@@ -44,10 +49,13 @@
         </form>
     </section>
     <section id="view" class="[ main-content ] [ flow ]">
-        <!-- <h1 class="[ color-primary ] [ text-center ]">Listado de recetas</h1>
+
+        <h1 id="tituloRecetas" class="[ color-primary ] [ text-center ]">Listado de recetas</h1>
+
+        <!-- targeta  -->
         <div class="[ row ] [ flex ]" data-state="wrap">
-            <div class="[ col ]">
-                <div class="[ card ] [ bg-secondary color-white ] [ radius shadow ]" card-id="${i.id}">
+            <div id="listaRecetas" class="[ col ]">
+                <!-- <div class="[ card ] [ bg-secondary color-white ] [ radius shadow ]" id="${i.id}">
                     <img src="${i.img_url}" alt="">
                     <div class="[ flow ]">
                         <h5>${i.title}</h5>
@@ -56,10 +64,12 @@
                             <button class="[ btn ]" data-state="warning" onclick="deleteRecipe(${i.id})">Eliminar</button>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
-        </div> -->
+        </div>
 
+
+        <!-- Mostrar receta  -->
         <!-- <h1 class="[ color-primary ] [ text-center ]">Receta</h1>
 
         <div class="[ recipe ] [ flex ] [ shadow ]">
@@ -79,6 +89,7 @@
         <div class="text-right">
             <button class="[ btn ]" data-state="primary" onclick="paintRecipeList()">Volver al listado</button>
         </div> -->
+
     </section>
     <script src="app.js"></script>
 </body>
